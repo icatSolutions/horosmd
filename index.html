@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Horos MD – FDA device name information | Now Falcon MD</title>
+  <meta name="description" content="Horos MD was the device name used in U.S. FDA clearance records for this software. The software is now developed and distributed as Falcon MD by the same development team." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="theme-color" content="#070a12" />
+  <meta name="keywords" content="Horos MD, FDA 510(k), K242552, Falcon MD" />
+
+  <link rel="canonical" href="https://horosmd.com/" />
+  <link rel="alternate" href="https://horosmd.com/" hreflang="en" />
+
+  <meta property="og:title" content="Horos MD – FDA device name information | Now Falcon MD" />
+  <meta property="og:description" content="Horos MD was the device name used in U.S. FDA clearance records for this software. The software is now developed and distributed as Falcon MD by the same development team." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://horosmd.com/" />
+  <meta property="og:site_name" content="Horos MD" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Horos MD – FDA device name information | Now Falcon MD" />
+  <meta name="twitter:description" content="Horos MD was the device name used in U.S. FDA clearance records for this software. The software is now developed and distributed as Falcon MD by the same development team." />
+
+  <!-- Gentle timed redirect. Button remains the primary path. -->
+  <meta http-equiv="refresh" content="12;url=https://falcon-viewer.com/" />
+
+  <style>
+    :root {
+      --bg: #070a12;
+      --panel: rgba(255, 255, 255, 0.06);
+      --panel2: rgba(255, 255, 255, 0.04);
+      --text: rgba(255, 255, 255, 0.92);
+      --muted: rgba(255, 255, 255, 0.70);
+      --muted2: rgba(255, 255, 255, 0.56);
+      --border: rgba(255, 255, 255, 0.14);
+      --border2: rgba(255, 255, 255, 0.09);
+      --shadow: 0 22px 70px rgba(0, 0, 0, 0.52);
+      --focus: rgba(255, 255, 255, 0.28);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: var(--bg);
+      overflow-x: hidden;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Multi-layer animated background (subtle, professional) */
+    .bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      background:
+        radial-gradient(1200px 700px at 16% 12%, rgba(138, 180, 248, 0.12), transparent 56%),
+        radial-gradient(900px 650px at 86% 22%, rgba(236, 160, 255, 0.10), transparent 55%),
+        radial-gradient(900px 750px at 55% 86%, rgba(160, 255, 214, 0.08), transparent 60%);
+    }
+
+    .bg::before,
+    .bg::after {
+      content: "";
+      position: absolute;
+      inset: -20vh -20vw;
+      filter: blur(46px);
+      opacity: 0.62;
+      transform: translate3d(0,0,0);
+      background:
+        radial-gradient(360px 320px at 22% 26%, rgba(138, 180, 248, 0.22), transparent 60%),
+        radial-gradient(420px 360px at 78% 28%, rgba(236, 160, 255, 0.16), transparent 62%),
+        radial-gradient(420px 380px at 56% 78%, rgba(160, 255, 214, 0.12), transparent 64%);
+      animation: driftA 18s ease-in-out infinite;
+    }
+
+    .bg::after {
+      opacity: 0.42;
+      filter: blur(60px);
+      animation: driftB 22s ease-in-out infinite;
+      background:
+        radial-gradient(420px 360px at 28% 72%, rgba(138, 180, 248, 0.14), transparent 62%),
+        radial-gradient(360px 320px at 74% 62%, rgba(236, 160, 255, 0.12), transparent 64%),
+        radial-gradient(480px 420px at 52% 28%, rgba(160, 255, 214, 0.10), transparent 66%);
+    }
+
+    @keyframes driftA {
+      0%   { transform: translate3d(0,0,0) scale(1.0); }
+      50%  { transform: translate3d(2.2vw,-1.6vh,0) scale(1.06); }
+      100% { transform: translate3d(0,0,0) scale(1.0); }
+    }
+
+    @keyframes driftB {
+      0%   { transform: translate3d(0,0,0) scale(1.0); }
+      50%  { transform: translate3d(-2.0vw,1.2vh,0) scale(1.05); }
+      100% { transform: translate3d(0,0,0) scale(1.0); }
+    }
+
+    /* Faint moving grid lines for depth */
+    .grid {
+      position: absolute;
+      inset: 0;
+      opacity: 0.13;
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.10) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.10) 1px, transparent 1px);
+      background-size: 64px 64px;
+      mask-image: radial-gradient(600px 420px at 50% 40%, rgba(0,0,0,1), transparent 70%);
+      animation: gridPan 26s linear infinite;
+    }
+
+    @keyframes gridPan {
+      0%   { transform: translate3d(0,0,0); }
+      100% { transform: translate3d(-64px, -64px, 0); }
+    }
+
+    /* Subtle vignette */
+    .vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(1000px 700px at 50% 35%, transparent 55%, rgba(0,0,0,0.55) 100%);
+      opacity: 0.65;
+    }
+
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 44px 16px;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .card {
+      width: min(920px, 100%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.03));
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: clamp(18px, 3.3vw, 36px);
+      position: relative;
+      overflow: hidden;
+      transform: translateY(18px) scale(0.99);
+      opacity: 0;
+      animation: enter 900ms cubic-bezier(0.2, 0.8, 0.2, 1) 120ms forwards;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    @keyframes enter {
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    /* Animated border glow */
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-radius: 24px;
+      padding: 2px;
+      background: conic-gradient(
+        from 90deg,
+        rgba(138, 180, 248, 0.0),
+        rgba(138, 180, 248, 0.52),
+        rgba(236, 160, 255, 0.42),
+        rgba(160, 255, 214, 0.36),
+        rgba(138, 180, 248, 0.52),
+        rgba(138, 180, 248, 0.0)
+      );
+      -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0.34;
+      animation: spin 14s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 3px;
+      width: 100%;
+      background: linear-gradient(90deg, rgba(138, 180, 248, 0.70), rgba(236, 160, 255, 0.56), rgba(160, 255, 214, 0.52));
+      opacity: 0.62;
+      pointer-events: none;
+    }
+
+    h1 {
+      font-size: clamp(22px, 3.4vw, 34px);
+      letter-spacing: 0.2px;
+      margin: 0;
+      line-height: 1.16;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.14), transparent);
+      margin: 14px 0 10px 0;
+    }
+
+    .content {
+      display: grid;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .content p {
+      margin: 0;
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    h2 {
+      margin: 18px 0 0 0;
+      font-size: 13px;
+      letter-spacing: 0.22px;
+      color: var(--muted2);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .facts {
+      margin-top: 10px;
+      border-radius: 16px;
+      border: 1px solid var(--border2);
+      background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.03));
+      overflow: hidden;
+    }
+
+    .factRow {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+      padding: 14px 14px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .factRow:first-child { border-top: none; }
+
+    .factLabel {
+      font-size: 13px;
+      color: var(--muted2);
+    }
+    .factValue {
+      font-size: 16px;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.1px;
+    }
+
+    @media (min-width: 760px) {
+      .factRow {
+        grid-template-columns: 280px 1fr;
+        align-items: center;
+        gap: 14px;
+      }
+    }
+
+    .callout {
+      margin-top: 18px;
+      padding: 14px 14px;
+      border-radius: 16px;
+      border: 1px solid var(--border2);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      display: grid;
+      gap: 10px;
+    }
+
+    .callout .label {
+      color: var(--muted2);
+      font-size: 13px;
+      letter-spacing: 0.2px;
+    }
+
+    .actions {
+      margin-top: 6px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background:
+        radial-gradient(120px 60px at 20% 20%, rgba(255,255,255,0.20), transparent 55%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06));
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 640;
+      letter-spacing: 0.2px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+      transform: translateZ(0);
+      transition: transform 160ms ease, border-color 160ms ease, filter 160ms ease;
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      white-space: nowrap;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(220px 120px at var(--mx, 50%) var(--my, 50%), rgba(255,255,255,0.22), transparent 60%);
+      opacity: 0;
+      transition: opacity 180ms ease;
+      pointer-events: none;
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      inset: -40% -60%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.20), transparent);
+      transform: translateX(-35%) rotate(10deg);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 255, 255, 0.30);
+      filter: brightness(1.02);
+    }
+
+    .btn:hover::after {
+      opacity: 1;
+      animation: sheen 900ms ease;
+    }
+
+    .btn:hover::before {
+      opacity: 1;
+    }
+
+    @keyframes sheen {
+      0%   { transform: translateX(-35%) rotate(10deg); }
+      100% { transform: translateX(35%) rotate(10deg); }
+    }
+
+    .btn:focus { outline: none; }
+
+    .btn:focus-visible {
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.10), 0 0 0 1px var(--focus), 0 14px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      opacity: 0.92;
+    }
+
+    .timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--muted);
+      font-size: 13.5px;
+      white-space: nowrap;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.86);
+      font-variant-numeric: tabular-nums;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pill::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.20), transparent);
+      transform: translateX(-60%);
+      opacity: 0.55;
+      animation: pillSweep 2.2s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pillSweep {
+      0%   { transform: translateX(-60%); opacity: 0.25; }
+      50%  { transform: translateX(60%);  opacity: 0.55; }
+      100% { transform: translateX(-60%); opacity: 0.25; }
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted2);
+      font-size: 13.5px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: rgba(160, 255, 214, 0.60);
+      box-shadow: 0 0 0 0 rgba(160, 255, 214, 0.28);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(160, 255, 214, 0.25); opacity: 0.70; }
+      50%  { box-shadow: 0 0 0 10px rgba(160, 255, 214, 0.00); opacity: 0.95; }
+      100% { box-shadow: 0 0 0 0 rgba(160, 255, 214, 0.00); opacity: 0.70; }
+    }
+
+    .fallback {
+      color: var(--muted2);
+      font-size: 13.5px;
+      line-height: 1.55;
+    }
+
+    .fallback a {
+      color: rgba(255, 255, 255, 0.82);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      word-break: break-word;
+    }
+
+    .legalNote {
+      margin-top: 12px;
+      color: rgba(255, 255, 255, 0.48);
+      font-size: 12.5px;
+      line-height: 1.55;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .bg::before, .bg::after, .grid, .card::before, .pill::after, .dot { animation: none; }
+      .card { animation: none; opacity: 1; transform: none; }
+      .btn { transition: none; }
+      .btn::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <main class="wrap">
+    <article class="card" aria-label="FDA device name information">
+      <h1>Horos MD – FDA Device Name Information</h1>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="content">
+        <p>“Horos MD” is the device name under which this software was cleared by the U.S. Food and Drug Administration.</p>
+        <p>The code name was used solely for regulatory identification in FDA clearance records.</p>
+        <p>The software is now developed and distributed under the commercial name Falcon MD. The change in name reflects independent product naming and ongoing regulatory maintenance.</p>
+      </div>
+
+      <h2>FDA Regulatory Reference</h2>
+
+      <div class="facts" role="group" aria-label="FDA regulatory reference details">
+        <div class="factRow">
+          <div class="factLabel">The U.S. FDA clearance for this software was granted under the device name</div>
+          <div class="factValue">Horos MD</div>
+        </div>
+        <div class="factRow">
+          <div class="factLabel">FDA 510(k) clearance number</div>
+          <div class="factValue">K242552</div>
+        </div>
+        <div class="factRow">
+          <div class="factLabel">Current commercial name</div>
+          <div class="factValue">Falcon MD</div>
+        </div>
+      </div>
+
+      <div class="content" style="margin-top: 12px;">
+        <p>Horos MD was not a marketed product name. Falcon MD is the commercial name under which the software is currently distributed.</p>
+      </div>
+
+      <h2>Navigation</h2>
+
+      <div class="callout" role="note" aria-label="Navigation">
+        <div class="label">Continue to Falcon MD</div>
+
+        <div class="actions">
+          <div class="row">
+            <a class="btn" href="https://falcon-viewer.com/" rel="noopener" aria-label="Continue to Falcon MD" id="primaryLink">
+              Continue to Falcon MD
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <div class="timer" aria-live="polite">
+              Redirect in <span class="pill" id="countdown">12</span> seconds
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="status" aria-hidden="true">
+              <span class="dot"></span>
+              Timed redirect is provided as a convenience.
+            </div>
+
+            <div class="fallback">
+              You will be redirected shortly, or you can continue manually:<br />
+              <a href="https://falcon-viewer.com/" rel="noopener">https://falcon-viewer.com/</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <noscript>
+        <p class="legalNote">JavaScript is disabled. The timed redirect may not occur. Use the button or the manual link above.</p>
+      </noscript>
+      <p class="legalNote">No affiliation with the Horos Project is stated or implied. “Horos” is referenced only as part of the historical FDA device name shown above.</p>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var seconds = 12;
+      var el = document.getElementById('countdown');
+      var target = 'https://falcon-viewer.com/';
+      var btn = document.getElementById('primaryLink');
+
+      function setMouseVars(e) {
+        if (!btn) return;
+        var r = btn.getBoundingClientRect();
+        var x = ((e.clientX - r.left) / r.width) * 100;
+        var y = ((e.clientY - r.top) / r.height) * 100;
+        btn.style.setProperty('--mx', x + '%');
+        btn.style.setProperty('--my', y + '%');
+      }
+      if (btn) {
+        btn.addEventListener('mousemove', setMouseVars, { passive: true });
+      }
+
+      var interval = window.setInterval(function () {
+        seconds -= 1;
+        if (el) el.textContent = String(Math.max(seconds, 0));
+        if (seconds <= 0) {
+          window.clearInterval(interval);
+          try {
+            window.location.href = target;
+          } catch (e) {
+            // Button and fallback link remain.
+          }
+        }
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>
